@@ -5,11 +5,11 @@ tags: Math
 
 **Pre-requisites** : Modular Arithmetic, Polynomial Long Division 
 
-In this post we will understand field extensions using examples. We will start with some basic definitions and develop our understanding of the topic. Let us start with *Groups*.
+In this post we will understand field extensions using examples. We will start with basic definitions and develop our understanding of the topic. Let us start with *Groups*.
 
 
 ### Groups
-A group is a set of elements $$G = \{a, b, c,...\}$$ and an operation $$\oplus$$ for which the following axioms hold:
+A group is a set of elements $$G = \{a, b, c,...\}$$ and an operation $$\oplus$$ for which the following axioms hold :
 * Closure : for any $$a, b \in G$$, the element $$ a \oplus b$$ is in $$G$$
 * Associative : for any $$a, b, c \in G$$, $$(a \oplus b) \oplus c = a \oplus (b \oplus c)$$
 * Identity : There is an identity element $$e$$ in $$G$$ for which $$a \oplus e = e \oplus a = a$$, for all $$a \in G$$ 
@@ -25,7 +25,7 @@ We will now introduce *Fields*.
 
 
 ### Fields
-A field is a set $$\mathbb{F}$$ of at least two elements, with two binary operation $$+$$ and $$*$$, for which the following axioms are satisfied :
+A field is a set $$\mathbb{F}$$ of at least two elements, with two binary operation $$+$$ and $$*$$, for which following axioms are satisfied :
 * The set $$\mathbb{F}$$ forms an abelian group (whose identity is called 0) under the operation $$+$$
 * The set $$\mathbb{F}^* = \mathbb{F} - \{0\} = \{a \in \mathbb{F}, a \neq 0\}$$ forms an abelian group (whose identity is called 1) under the operation $$*$$ 
 * Distributivity : for all $$x, y, z \in \mathbb{F}$$, $$x*(y+z) = x*y +x*z$$
@@ -74,7 +74,7 @@ Now before we construct $$\mathbb{F}_{p^k}$$, the degree $$k$$ extension of $$\m
 ### Polynomials
 Let us start by defining the degree of a polynomial. Let $$P$$ be a polynomial such that 
 
-$$P=\sum_{i=0}^{t} f_i x^i$$ 
+$$P=\sum_{i=0}^{t} f_i x^i \nonumber $$ 
 
 then the degree of $$P$$ denoted by $$deg(P)$$ is defined as $$deg(P) = \underset{i}{\mathrm{max}} \{f_i \neq 0\}$$.
 
@@ -85,7 +85,7 @@ A polynomial of degree $$\leq d$$ in $$R[X]$$ is given by $$ f(X) = f_0 + f_1 X 
 $$R[X]$$ is the union of all the polynomials over all degrees in $$\mathbb{N} \bigcup 0 $$.
 
 $$
-R[X] = \bigcup_{d \in \mathbb{N} \bigcup 0 } \{ \text{polynomials of degree} \leq d\}
+R[X] = \bigcup_{d \in \mathbb{N} \bigcup 0 } \{ \text{polynomials of degree} \leq d\} \nonumber 
 $$
 
 Next, we will go through two important results regarding polynomials.
@@ -133,7 +133,7 @@ Taking modulo $$g(X)$$ on both sides $$(f(X) +h(X)) \;\text{mod-} g(X)=0$$ i.e. 
 $$f(X) \in \mathbb{F}_p[X], deg(f) < k$$ and $$g(X) \in \mathbb{F}_p[X], deg(g) = k$$ is an irreducible polynomial thus $$GCD(f,g) = 1$$. Using **Lemma 2**, 
 
 $$
-I(f,g) = \{u \cdot f + v \cdot g \mid u,v \in \mathbb{F}[X] \}
+I(f,g) = \{u \cdot f + v \cdot g \mid u,v \in \mathbb{F}[X] \} \nonumber 
 $$
 
 Thus $$\exists u,v \in \mathbb{F}_p[X]$$ such that $$u(X) \cdot f(X) + v(X) \cdot g(X) = 1$$. 
@@ -152,15 +152,15 @@ Let $$g(X)$$ be a degree $$k=2$$ *irreducible* polynomial with coefficients in $
 Note that there are four polynomial of degree 2 in $$\mathbb{F}_2[X]$$ and the only irreducible polynomial is $$X^2+ X +1$$. The other three polynomials are reducible. Since
 
 $$
-X^2 = X \cdot X
+X^2 = X \cdot X \nonumber 
 $$
 
 $$
-X^2 + X = X \cdot (X+1)
+X^2 + X = X \cdot (X+1) \nonumber 
 $$
 
 $$
-X^2 + 1 = (X+1) \cdot (X+1)
+X^2 + 1 = (X+1) \cdot (X+1) \nonumber 
 $$
 
 Thus $$g(X)=X^2+ X +1$$.
