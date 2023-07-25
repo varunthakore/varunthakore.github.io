@@ -28,7 +28,7 @@ article_header:
   #data_source: site.sample_page
   type: cover
   image:
-    src: /pictures/powai_lake_cropped.jpg
+    src:
 ---
 
 <style>
